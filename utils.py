@@ -1,6 +1,7 @@
 
 from __future__ import annotations
 
+from contextlib import contextmanager
 import os
 from pathlib import Path
 
@@ -27,6 +28,7 @@ def get_job_store(base_path : Path = Path(".")) -> JobStore:
         }
     )
 
+@contextmanager
 def chdir_ctx(new_dir : Path):
     cwd = Path.cwd()
     os.chdir(new_dir)
