@@ -1,6 +1,10 @@
 
-from jobflow import JobStore
+from __future__ import annotations
+
+import os
 from pathlib import Path
+
+from jobflow import JobStore
 
 def get_job_store(base_path : Path = Path(".")) -> JobStore:
     bp = Path(base_path).expanduser().resolve()
@@ -22,3 +26,9 @@ def get_job_store(base_path : Path = Path(".")) -> JobStore:
             }  
         }
     )
+
+def chdir(new_dir : Path):
+    cwd = Path.cwd()
+    os.chdir(new_dir)
+    yield
+    os.chdir(cwd)
