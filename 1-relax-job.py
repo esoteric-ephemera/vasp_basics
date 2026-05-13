@@ -2,7 +2,6 @@
 
 from __future__ import annotations
 
-import os
 from pathlib import Path
 from typing import TYPE_CHECKING
 
@@ -11,7 +10,7 @@ from atomate2.vasp.powerups import update_user_incar_settings
 from jobflow import run_locally
 from pymatgen.core import Structure
 
-from utils import get_job_store
+from utils import get_job_store, chdir_ctx
 
 if TYPE_CHECKING:
     from jobflow import Job, Response
@@ -31,13 +30,12 @@ def run_relax(structure : Structure, working_dir : Path = WORKING_DIR, incar_upd
         working_dir.mkdir(exist_ok=True)
     
     cwd = Path.cwd()
-    os.chdir(working_dir)
-    resp = run_locally(
-        mp_relax_job(structure,incar_updates=incar_updates),
-        store=get_job_store(base_path=working_dir),
-        create_folders=True,
-    )
-    os.chdir(cwd)
+    with chdir_ctx(working_dir):
+        resp = run_locally(
+            mp_relax_job(structure,incar_updates=incar_updates),
+            store=get_job_store(base_path=working_dir),
+            create_folders=True,
+        )
     return resp
 
 if __name__ == "__main__":

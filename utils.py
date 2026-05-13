@@ -27,7 +27,7 @@ def get_job_store(base_path : Path = Path(".")) -> JobStore:
         }
     )
 
-def chdir(new_dir : Path):
+def chdir_ctx(new_dir : Path):
     cwd = Path.cwd()
     os.chdir(new_dir)
     yield
