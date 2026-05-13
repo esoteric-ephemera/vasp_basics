@@ -30,12 +30,15 @@ def run_relax(structure : Structure, working_dir : Path = WORKING_DIR, incar_upd
     if not working_dir.exists():
         working_dir.mkdir(exist_ok=True)
     
-    with os.chdir(working_dir):
-        return run_locally(
-            mp_relax_job(structure,incar_updates=incar_updates),
-            store=get_job_store(base_path=working_dir),
-            create_folders=True,
-        )
+    cwd = Path.cwd()
+    os.chdir(working_dir)
+    resp = run_locally(
+        mp_relax_job(structure,incar_updates=incar_updates),
+        store=get_job_store(base_path=working_dir),
+        create_folders=True,
+    )
+    os.chdir(cwd)
+    return resp
 
 if __name__ == "__main__":
 
