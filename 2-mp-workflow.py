@@ -68,7 +68,7 @@ def mp_workflow(
         bandstructure_job = HSEBSMaker(
             name = "r2SCAN band structure",
             input_set_generator = HSEBSSetGenerator(
-                config_dict=BS_CONFIG,
+                config_dict=BANDSTRUCTURE_CONFIG,
                 user_incar_settings={
                     "GGA": None,
                     "METAGGA": "R2SCAN",
