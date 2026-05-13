@@ -127,7 +127,7 @@ dependencies:
     - pydantic-settings==2.13.1
     - pydash==8.0.6
     - pymatgen==2026.3.23
-    - pymatgen-core==2026.4.7
+    - pymatgen-core==2026.4.16
     - pymatgen-io-validation==0.1.2
     - pymongo==4.10.1
     - pynacl==1.6.2
