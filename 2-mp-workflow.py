@@ -232,9 +232,8 @@ def run_mp_workflow_locally(
 
     cwd = Path.cwd()
     with chdir_ctx(working_dir):
-        return
         response = run_locally(
-            mp_workflow(structure,incar_updates=incar_updates),
+            flow,
             store=get_job_store(base_path=working_dir),
             create_folders=True,
         )
