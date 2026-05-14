@@ -255,7 +255,7 @@ Direct
 """
 
     response = run_mp_workflow_locally(
-        POSCAR_Zn_S,
+        Structure.from_str(POSCAR_Zn_S,fmt="poscar"),
         pre_relax=True,
         get_bandstructure=True,
         resource_hpc = "kestrel",
