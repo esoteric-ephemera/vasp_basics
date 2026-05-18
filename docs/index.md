@@ -1,10 +1,3 @@
----
-title: Basics of plane-wave density functional theory
-nav_order: 1
-has_children: true
----
-
-
 # Basics of plane-wave density functional theory
 
 🛠️ **UNDER CONSTRUCTION** 🛠️

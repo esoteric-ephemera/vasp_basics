@@ -1,10 +1,4 @@
 
----
-title: VASP Inputs
-nav_order: 2
-has_children: false
----
-
 ## VASP inputs
 
 ### Linear algebra woes

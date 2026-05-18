@@ -1,10 +1,4 @@
 
----
-title: KPOINTS
-nav_order: 3
-has_children: true
----
-
 ## KPOINTS
 
 The [KPOINTS](https://vasp.at/wiki/KPOINTS) file was formerly required by VASP but is now optional.
