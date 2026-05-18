@@ -2,7 +2,7 @@
 ---
 title: VASP Inputs
 nav_order: 2
-has_children: true
+has_children: false
 ---
 
 ## VASP inputs
@@ -34,4 +34,4 @@ is less than a tolerance, called the **cutoff energy** $E_\mathrm{cut}$.
 This is great, because it reduces this to a problem which is readily solvable by standard math libraries that have been developed over the years (BLAS, LLAPACK, etc.).
 
 Physically, the eigenvalues are just the bandstructure as a function of the $\boldsymbol{k}$-point and the band index $n$:
-![r<sup>2</sup>SCAN bandstructure of Pm-3m Ba (mp-1977763).](/docs/assets/mp-1977763.png)
+![r<sup>2</sup>SCAN bandstructure of Pm-3m Ba (mp-1977763).](../assets/mp-1977763.png)
