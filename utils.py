@@ -1,4 +1,3 @@
-
 from __future__ import annotations
 
 from contextlib import contextmanager
@@ -7,7 +6,8 @@ from pathlib import Path
 
 from jobflow import JobStore
 
-def get_job_store(base_path : Path = Path(".")) -> JobStore:
+
+def get_job_store(base_path: Path = Path(".")) -> JobStore:
     bp = Path(base_path).expanduser().resolve()
     return JobStore.from_dict_spec(
         {
@@ -16,7 +16,7 @@ def get_job_store(base_path : Path = Path(".")) -> JobStore:
                 "paths": str(bp / "output.json"),
                 "read_only": False,
                 "key": "uuid",
-            },                
+            },
             "additional_stores": {
                 "data": {
                     "type": "JSONStore",
@@ -24,12 +24,13 @@ def get_job_store(base_path : Path = Path(".")) -> JobStore:
                     "read_only": False,
                     "key": "uuid",
                 }
-            }  
+            },
         }
     )
 
+
 @contextmanager
-def chdir_ctx(new_dir : Path):
+def chdir_ctx(new_dir: Path):
     cwd = Path.cwd()
     os.chdir(new_dir)
     yield

@@ -45,7 +45,7 @@ In this example, we have a simple cubic lattice with $a=5.4$ Å.
 4. List of the elements, grouped by symbol. The order of these **must** match the order in the POTCAR.
 5. How many elements are in the structure, by type. Here, we state that the coordinates of 4 Zn atoms will be listed, then 4 S atoms.
 6. Whether the coordinates of the atoms will be specified in units of the lattice vectors (`direct`) or in cartesian coordinates (`cartesian`). Either is fine.
-7. The $a$, $b$, and $c$ (if `direct`) or $x$, $y$, $z$ (if `cartesian`) coordinates of the atoms. The atom label is optional but will be parsed by VASP. 
+7. The $a$, $b$, and $c$ (if `direct`) or $x$, $y$, $z$ (if `cartesian`) coordinates of the atoms. The atom label is optional but will be parsed by VASP.
 
 ### More options
 
