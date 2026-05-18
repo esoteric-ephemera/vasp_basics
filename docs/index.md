@@ -20,4 +20,5 @@ This guide will also try to give you some background in high-throughput calculat
 * [Overview](inputs/overview.md)
 * [INCAR](inputs/incar.md)
 * [POSCAR](inputs/poscar.md)
+* [POTCAR](inputs/potcar.md)
 * [KPOINTS](inputs/kpoints.md)
