@@ -17,7 +17,7 @@ This guide will also try to give you some background in high-throughput calculat
 
 ## Inputs
 
-* (Overview)[inputs/overview.md]
-* (INCAR)[inputs/incar.md]
-* (POSCAR)[inputs/poscar.md]
-* (KPOINTS)[inputs/kpoints.md]
+* [Overview](inputs/overview.md)
+* [INCAR](inputs/incar.md)
+* [POSCAR](inputs/poscar.md)
+* [KPOINTS](inputs/kpoints.md)
