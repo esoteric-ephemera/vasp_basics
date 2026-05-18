@@ -239,9 +239,23 @@ def run_mp_workflow_locally(
         )
     return response
 
+def plot_band_structure(base_path : Path = WORKING_DIR) -> BSPlotter:
+
+    from pymatgen.electronic_structure.bandstructure import BandStructureSymmLine
+    from pymatgen.electronic_structure.plotter import BSPlotter
+
+    job_store = get_job_store(base_path=base_path)
+    job_store.connect()
+
+    output = job_store.query_one({"name": {"$regex": "band structure"}}, load = True)
+    bandstructure = BandStructureSymmLine.from_dict(
+        output["output"]["vasp_objects"]["bandstructure"]
+    )
+    plot = BSPlotter(bandstructure)
+    return plot
 
 if __name__ == "__main__":
-
+    
     POSCAR_Zn_S = """Example zincblende ZnS POSCAR
 5.4
     0.0 0.5 0.5

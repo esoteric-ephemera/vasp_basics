@@ -41,7 +41,7 @@ def run_relax(structure : Structure, working_dir : Path = WORKING_DIR, incar_upd
 if __name__ == "__main__":
 
     POSCAR_Zn_S = """Example zincblende ZnS POSCAR
-3.9
+5.3
     0.0 0.5 0.5
     0.5 0.0 0.5
     0.5 0.5 0.0
