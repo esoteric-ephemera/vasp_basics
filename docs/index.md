@@ -10,3 +10,14 @@ A lot of the same concepts will hold for users of other plane-wave basis set cod
 Users of Gaussian basis set codes (ex., alphabetically: Gaussian, ORCA, QCHEM, TURBMOLE) might be able to take away some high level concepts mostly about DFT.
 
 This guide will also try to give you some background in high-throughput calculations.
+
+# Table of contents
+
+* [About](index.md)
+
+## Inputs
+
+* (Overview)[inputs/overview.md]
+* (INCAR)[inputs/incar.md]
+* (POSCAR)[inputs/poscar.md]
+* (KPOINTS)[inputs/kpoints.md]
