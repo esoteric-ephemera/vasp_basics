@@ -39,7 +39,7 @@ The format is:
    0.0    0.0    1.0
 ```
 3. The direct lattice vectors (in real-space) in Å.
-The first line is the $\bm{a}$-lattice vector, the second is $\bm{b}$, and the third is $\bm{c}$.
+The first line is the $\boldsymbol{a}$-lattice vector, the second is $\boldsymbol{b}$, and the third is $\boldsymbol{c}$.
 These will be multiplied by the scale factor above.
 In this example, we have a simple cubic lattice with $a=5.4$ Å.
 4. List of the elements, grouped by symbol. The order of these **must** match the order in the POTCAR.

@@ -2,9 +2,9 @@
 ## POTCAR
 
 In solid state calculations, and in calculations of molecules with "heavy" atoms (usually Kr and up), it is common to use what is called a "pseudopotential" to describe the interaction between nuclei and electrons.
-Let's remind ourselves that the interaction between a point nucleus of charge $Ze$ at position $\bm{R}$, and an electron of charge $-e$ at position $\bm{r}$, is the Coulomb interaction:
+Let's remind ourselves that the interaction between a point nucleus of charge $Ze$ at position $\boldsymbol{R}$, and an electron of charge $-e$ at position $\boldsymbol{r}$, is the Coulomb interaction:
 $$
-V(|\bm{r} - \bm{R}|) = - \frac{Z e^2}{|\bm{r} - \bm{R}|}.
+V(|\boldsymbol{r} - \boldsymbol{R}|) = - \frac{Z e^2}{|\boldsymbol{r} - \boldsymbol{R}|}.
 $$
 Then af pseudopotential replaces $N_c$ of the "core" electrons with an effective interaction, and removes them from the calculation entirely.
 The remaining $N_v$ electrons experience a modified interaction called the pseudopotential.
@@ -17,7 +17,7 @@ $$
     \end{array}
 \right.
 $$
-where now $\bm{s} = \bm{r} - \bm{R}$, the separation distance between the nucleus and electron.
+where now $\boldsymbol{s} = \boldsymbol{r} - \boldsymbol{R}$, the separation distance between the nucleus and electron.
 
 The basic idea of pseudopotentials are active and participant electrons.
 Active electrons are those which participate in the formation and breaking of chemical bonds.

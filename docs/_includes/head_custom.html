@@ -2,7 +2,11 @@
   MathJax = {
     tex: {
       inlineMath: [['$', '$'], ['\\(', '\\)']],
-      displayMath: [['$$', '$$'], ['\\[', '\\]']]
+      displayMath: [['$$', '$$'], ['\\[', '\\]']],
+      packages: {'[+]': ['boldsymbol']}
+    },
+    loader: {
+      load: ['[tex]/boldsymbol']
     }
   };
 </script>
