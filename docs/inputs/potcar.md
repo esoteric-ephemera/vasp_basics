@@ -1,4 +1,11 @@
 
+---
+title: POTCAR
+nav_order: 3
+has_children: false
+---
+
+
 ## POTCAR
 
 In solid state calculations, and in calculations of molecules with "heavy" atoms (usually Kr and up), it is common to use what is called a "pseudopotential" to describe the interaction between nuclei and electrons.

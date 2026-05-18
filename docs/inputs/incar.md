@@ -1,4 +1,10 @@
 
+---
+title: INCAR
+nav_order: 3
+has_children: false
+---
+
 ## INCAR
 
 The [INCAR](https://vasp.at/wiki/INCAR) enumerates most of the basic control parameters of a VASP calculation.

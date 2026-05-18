@@ -1,4 +1,10 @@
 
+---
+title: KPOINTS
+nav_order: 2
+has_children: true
+---
+
 ## VASP inputs
 
 ### Linear algebra woes
