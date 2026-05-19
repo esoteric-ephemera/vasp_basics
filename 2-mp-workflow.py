@@ -54,6 +54,11 @@ def mp_workflow(
         pre_relax_job = ForceFieldRelaxMaker(
             name="MatPES-r2SCAN MLIP relax",
             force_field_name="MATPES_R2SCAN",
+            calculator_kwargs={
+                "architecture": "TensorNet",
+                "version": "2025.2",
+                "stress_unit": "eV/A3",
+            },
             fix_symmetry=True,
         ).make(structure)
         jobs += [pre_relax_job]
